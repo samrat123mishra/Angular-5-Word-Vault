@@ -1,0 +1,90 @@
+.modal-container{
+    width: 60%;
+    position: relative;
+    border: 3px solid blue;
+    height: 472px;
+    background: white;
+    top: 40px;
+    margin: 0 auto;
+}
+
+.help-text{
+    display: inline-block;
+    float: left;
+    width: 251px;
+    overflow: auto;
+    height: 447px;
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+
+.help-video{
+
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    left: 286px;
+    width: 64%;
+}
+
+.help-video video{
+    width: 100%;
+}
+
+::ng-deep span b{
+    color: red;
+}
+.close-btn{
+    position: absolute;
+    right: -9px;
+    top: -23px;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 37px;
+    background: #58aee2;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:focus{
+    outline-color: black;    
+}
+
+
+@media screen and (max-width: 768px){
+    .modal-container{
+        width: 90%;
+    }
+
+    .help-video{
+        width: 59%;
+    }
+
+    .help-video video{
+        width: 100%;
+        left: 275px;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    
+    .help-video{
+        display: block;
+        left: 10px;
+        margin-top: 15px;
+        width: 94%;
+    }
+    .help-text{
+        width: 350px;
+        float: none;
+    }
+    
+      .modal-container{
+          height:75%;
+      }
+}

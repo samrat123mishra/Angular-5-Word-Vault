@@ -1,0 +1,27 @@
+.sprite{
+		
+    position: absolute;
+    height: 418px;
+    width: 516px;
+    background: url(/assets/images/vault-sprite.png) no-repeat -1px 0;
+
+}
+
+.reward{
+    
+    position: absolute;
+    top: 28px;
+    height: 355px;
+    left: 112px;
+    border-radius: 50%;
+
+}
+
+
+@media screen and (max-width: 425px){
+    .sprite{
+
+        transform: scale(0.75);
+        left: -43px;
+    }
+}
